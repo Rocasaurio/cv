@@ -1,0 +1,329 @@
+    /* Variables */
+    :root{
+        /* Colores */
+    --color-background: yellow;
+    
+    --color-whiteA1: #e9e9e9;
+    --color-whiteA2: #dadada;
+    --color-whiteA3: #c2c2c2;
+
+    --color-blackA1: #141414;
+    --color-blackA2: #252525;
+    --color-blackA3: #636363;
+    --color-blackA4: #afafaf;
+
+    --color-compA1: #491a8a;
+    --color-compA2: #5d00ff;
+    --color-compA3: #7B00FF;
+
+    --color-redA1: #942020;
+
+    --color-gradA1: #044851;
+    --color-gradA2: #1a5863;
+    --color-gradA3: #25828b;
+
+    --color-gradB1: #272529;
+    --color-gradB2: #af3afb;
+
+    --color-gradC1: #519eac;
+    --color-gradC2: #257f8b;
+
+        /* Fonts */
+    --font-head: 'Spectral', sans-serif;
+    --font-body: 'Karla', sans-serif;
+}
+
+
+body {
+    font-family: var(--font-body);
+    margin: 0rem auto;
+    background-color: var(--color-whiteA1);
+
+    background-image: linear-gradient(to right, var(--color-gradA1), var(--color-gradA2));
+    background-size: 100% 15rem;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+  }
+
+p{
+    color: var(--color-blackA1);
+}
+
+a {
+    color: var(--color-compA1);
+}
+
+h1 {
+    font-family: var(--font-head);
+    color: var(--color-blackA1);
+}
+
+h2 {
+    font-family: var(--font-head);
+    color: var(--color-blackA1);
+}
+
+h3 {
+    font-family: var(--font-head);
+    color: var(--color-blackA3);
+}
+
+/* Navegador 1 - Barra superior*/
+nav{
+    display: flex;
+    flex-direction: row;    	
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: left;
+    align-content: stretch;
+
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    padding-right: 10%;
+    padding-top: 1rem;
+
+    border-style: solid;
+    border-color: var(--color-blackA1);
+    border-width: 1rem 0 0 0;
+
+}
+
+nav h1{
+    margin: 0rem;
+    padding: 0em;
+    color: var(--color-whiteA1);
+    font-size: 1rem;
+}
+
+nav p{
+    margin: 0rem;
+    padding: 0em;
+    color: var(--color-whiteA1);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav a {
+    margin: 0;
+    padding: 0;
+    border-radius: .4rem;
+    padding: .5rem;
+    margin: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: hsla(0, 0%, 0%, .1);
+
+}
+
+/* Artículo 1 - Educación profesional*/
+article.educationProf{
+    width: 85%;
+    padding: 1 auto 1 auto;
+    margin: 1rem auto 1rem auto;
+
+}
+    /* Sección 1/2 - Tarjeta de contacto*/
+    div.educationCard {
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        background-color: var(--color-whiteA1);
+        border-radius: 3rem;
+
+        box-shadow: 0px 10px 103px 2px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0px 10px 103 2px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 10px 103px 2px rgba(0,0,0,0.2);
+    }
+        div.educationCard h1{
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+
+
+    div.educationContainer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;    	
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: left;
+        align-content: stretch;
+
+        padding: 1rem;
+    }
+
+    div.educationContainer a p{
+            font-weight: 500;
+            color: var(--color-compA1);
+            text-decoration: underline;
+    }
+
+        div.blockDate{
+            display: inline-block;
+            font-family: var(--font-head);
+            font-size: .8rem;
+            color: var(--color-blackA3);
+            margin-left: 5%;
+            margin-bottom: .5rem;
+            padding: 0 .2em;
+            border-style: solid;
+            border-color: var(--color-blackA3);
+            border-width: .1rem;
+        }
+        
+
+    div.educationRoute {
+        width: 45%;
+        display: flex;
+        flex-direction: column;    	
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: flex-start;
+        align-content: stretch;
+        color: var(--color-whiteA1);
+    }
+
+        div.educationRoute h2{
+            margin: 0 auto 0 auto;
+            width: 90%;
+            font-family: var(--font-body);
+        }
+
+        div.educationRoute p{
+            margin: 0 auto .5rem auto;
+            width: 90%;
+    }
+
+        p.categoryInfo{
+            font-weight: 700;
+            font-variant: small-caps;
+        }
+
+        p.subInstitution{
+        font-size: .9rem;
+        }
+
+
+            div.educationItem{
+                width: 100%;
+                display: flex;
+                flex-direction: row;    	
+                flex-wrap: nowrap;
+                justify-content: start;
+                align-items: center;
+                align-content: stretch;
+
+                border-radius: 1rem;
+                box-shadow: 0px 10px 103px 1px rgba(0,0,0,0.2);
+            }
+
+                div.eItemInfo{
+                    width: 100%;
+                }
+
+                div.educationItem img{
+                    width: 40%;
+                    border-radius: 1rem 0 0 1rem;
+                }
+
+
+    div.extraItem{
+        margin-bottom: 2rem;
+        width: 100%;
+
+        border-radius: 1rem;
+
+        box-shadow: 0px 10px 103px 1px rgba(0,0,0,0.2);
+
+    }
+
+
+
+
+    div.educationExtra{
+        width: 45%;
+        display: flex;
+        flex-direction: column;    	
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: flex-start;
+        align-content: stretch;
+        color: var(--color-whiteA1);
+    }
+
+    div.educationExtra img{
+        object-fit: cover;
+        object-position: 100% 20%;
+      
+        width: 100%;
+        height: 8rem;
+        border-radius: 1rem 1rem 0 0 ;
+
+        margin-bottom: .5rem;
+    }
+
+        div.rItem3 img{
+            object-position: 100% 20%;
+        }
+
+        div.rItem2 img{
+            object-position: 100% 25%;
+        }
+
+        div.rItem1 img{
+            object-position: 100% 13%;
+        }
+
+    div.educationExtra h2{
+        margin: 0 auto 0 auto;
+        width: 90%;
+        font-family: var(--font-body);
+    }
+    div.educationExtra p{
+        margin: 0 auto .5rem auto;
+        width: 90%;
+    }
+
+
+/* Footer */
+footer {
+    background-color: var(--color-blackA1);
+    display: flex;
+    flex-direction: column;    	
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    color: var(--color-whiteA1);
+    padding: 2rem;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5rem 0 0 0;
+        }
+
+        footer h1 {
+            font-size: 1.2rem;
+            color:var(--color-whiteA1);
+            margin: 0;
+            padding: 0;
+        }
+
+        footer p {
+            font-size: .8rem;
+            color: var(--color-whiteA1);
+        }
+
+        div.containerSocialNet {
+            margin: 0;
+            padding: 0;
+        }
+
+            div.containerSocialNet img{
+                max-width: 3rem;
+            }

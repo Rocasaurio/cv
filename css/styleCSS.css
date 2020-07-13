@@ -1,0 +1,585 @@
+    /* Variables */
+:root{
+        /* Colores */
+    --color-background: yellow;
+    
+    --color-whiteA1: #e9e9e9;
+    --color-whiteA2: #dadada;
+    --color-whiteA3: #c2c2c2;
+
+    --color-blackA1: #141414;
+    --color-blackA2: #252525;
+    --color-blackA3: #636363;
+    --color-blackA4: #afafaf;
+
+    --color-compA1: #491a8a;
+    --color-compA2: #5d00ff;
+    --color-compA3: #7B00FF;
+
+    --color-redA1: #942020;
+
+    --color-gradA1: #044851;
+    --color-gradA2: #1a5863;
+    --color-gradA3: #25828b;
+
+    --color-gradB1: #272529;
+    --color-gradB2: #af3afb;
+
+    --color-gradC1: #519eac;
+    --color-gradC2: #257f8b;
+
+        /* Fonts */
+    --font-head: 'Spectral', sans-serif;
+    --font-body: 'Karla', sans-serif;
+}
+
+
+body {
+    font-family: var(--font-body);
+    margin: 0rem auto;
+    background-color: var(--color-whiteA1);
+
+    background-image: linear-gradient(to right, var(--color-gradA1), var(--color-gradA2));
+    background-size: 100% 33rem;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+  }
+
+a {
+    text-decoration: none;
+    color: var(--color-compA1) ;
+}
+
+h1 {
+    font-family: var(--font-head);
+    color: var(--color-blackA1);
+}
+
+h2 {
+    font-family: var(--font-head);
+    color: var(--color-blackA1);
+}
+
+h3 {
+    font-family: var(--font-head);
+    color: var(--color-blackA3);
+}
+
+/* Navegador 1 - Barra superior*/
+nav{
+    display: flex;
+    flex-direction: row;    	
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: left;
+    align-content: stretch;
+
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    padding-right: 10%;
+    padding-top: 1rem;
+
+    border-style: solid;
+    border-color: var(--color-blackA1);
+    border-width: 1rem 0 0 0;
+
+}
+
+nav p{
+    margin: 0rem;
+    padding: 0em;
+    color: var(--color-whiteA1);
+    font-size: 1rem;
+    font-weight: 700;
+}
+nav a {
+    margin: 0;
+    padding: 0;
+    border-radius: .4rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+nav a:hover {
+    background-color: hsla(0, 0%, 0%, .1);
+
+}
+
+/* Artículo 1 - Resumen de presentación*/
+article.firstContact{
+    width: 85%;
+    padding: 1 auto 1 auto;
+    margin: 1rem auto 1rem auto;
+
+}
+    /* Sección 1/2 - Tarjeta de contacto*/
+    section.contactCard {
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        background-color: var(--color-whiteA1);
+        border-radius: 3rem;
+        -webkit-box-shadow: 0px 10px 103px 53px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 10px 103px 53px rgba(0,0,0,0.2);
+        box-shadow: 0px 10px 103px 53px rgba(0,0,0,0.2);
+/* https://i.imgur.com/Kd6HwQU.png */
+/*         background-image: url("images\iconic\rocasaurioLunar.png"); */
+        background-image: url("https://imgur.com/Kd6HwQU.png");
+
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: 95% 95%;
+    }
+
+
+        div.containerCard {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;    	
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: left;
+            align-content: stretch;
+        }
+
+            div.containerCardPhoto {
+                width: 40%;
+            }
+            
+                #photoFace {
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 1rem;
+                }
+
+            div.containerCardInfo {
+                width: 40%;
+                vertical-align: middle;
+                align-self: center;
+            }
+
+                div.containerCardInfo h1{
+                    font-size: 3.2em;
+                    font-variant: small-caps;
+                    margin: auto 0 .5rem 0;
+                    line-height: 0.8em;
+                }
+
+                div.containerCardInfo h2{
+                    font-size: .8rem;
+                    margin: 0 0 2rem 0;
+                    border-style: solid;
+                    border-color: var(--color-compA1);
+                    border-width: 0 0 .2em 0;
+                }
+
+                div.containerCardInfo h3 {
+                    font-size: .9rem;
+                    margin: 0;
+                    margin-left: 1rem;
+
+                }
+
+                div.containerCardInfo div{
+                    margin: 0 0 0rem 0;
+                }
+
+
+                    div.containerCardInfo p{
+                        margin: .5em 0;
+                        color: var(--color-blackA2);
+                    }
+
+                div.containerCardInfo a {
+                    font-weight: 700;
+                }
+
+                ul.listContact {
+                    list-style: none;
+                    padding: 0;
+                    margin: 2rem 0 2rem 0;
+                    color: var(--color-blackA2);
+
+                }
+
+                    ul.listContact img{
+                        max-width: 2em;
+                        padding-right: .5rem;
+                        vertical-align: middle;
+                        
+                    }
+
+                    ul.listContact li {
+                        margin-bottom: .5rem;
+                        margin-top: .5rem;
+                    }
+
+                    div.containerSocialNet {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                        div.containerSocialNet img{
+                            max-width: 3rem;
+                        }
+
+    /* Sección 2/2 - Sobre mí*/
+
+    section.about {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;    	
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: left;
+        align-content: stretch;
+
+        padding: 1rem;
+    }
+
+        div.countainerSkills{
+            width: 60%;
+            margin-right: 3rem;
+        }
+        
+        div.countainerSkills h1{
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        div.countainerSkills h2{
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+            div.countainerInterest{
+                display: flex;
+                flex-direction: row;    	
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: stretch;
+            }
+
+                div.interest {
+                    border-style: solid;
+                    border-color: var(--color-whiteA2);
+                    border-width: .1rem;
+                    border-radius: 1rem;
+
+                    padding: 1rem;
+                    margin: 1rem;
+                }
+
+                div.interest h3{
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1rem;
+                    font-variant: small-caps;
+                    color: var(--color-blackA1);
+                }
+
+        div.countainerComp{
+            width: 30%;
+            display: flex;
+            flex-direction: column;    	
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: stretch;
+            color: var(--color-whiteA1);
+        }
+
+        div.countainerComp h2{
+            text-indent: 2.5em;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        div.countainerComp h3{
+            padding: 0;
+            margin: 0;
+            text-indent: 2.5em;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            color: var(--color-blackA1);
+        }
+
+            div.skill-o-meterBorder{
+                height: .6rem;
+                width: 90%;
+                border-radius: 1rem;
+                border-style: solid;
+                border-color: var(--color-whiteA3);
+                border-width: .1rem;
+                padding: .3rem;
+                margin-bottom: 1.5rem;
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+
+                div.skill-o-meter1{
+
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                    background-color: var(--color-whiteA2);
+                    background-image: linear-gradient(to right, var(--color-gradB1), var(--color-gradB2));
+                    background-repeat: no-repeat;
+                    background-size: 65%;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: .6rem;
+                    border-radius: 1rem;
+
+                }
+
+                div.skill-o-meter2{
+
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                    background-color: var(--color-whiteA2);
+                    background-image: linear-gradient(to right, var(--color-gradB1), var(--color-gradB2));
+                    background-repeat: no-repeat;
+                    background-size: 95%;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: .6rem;
+                    border-radius: 1rem;
+
+                }
+
+                div.skill-o-meter3{
+
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                    background-color: var(--color-whiteA2);
+                    background-image: linear-gradient(to right, var(--color-gradB1), var(--color-gradB2));
+                    background-repeat: no-repeat;
+                    background-size: 70%;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: .6rem;
+                    border-radius: 1rem;
+
+                }
+
+                div.skill-o-meter4{
+
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                    background-color: var(--color-whiteA2);
+                    background-image: linear-gradient(to right, var(--color-gradB1), var(--color-gradB2));
+                    background-repeat: no-repeat;
+                    background-size: 90%;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: .6rem;
+                    border-radius: 1rem;
+
+                }
+
+                div.skill-o-meter5{
+
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                    background-color: var(--color-whiteA2);
+                    background-image: linear-gradient(to right, var(--color-gradB1), var(--color-gradB2));
+                    background-repeat: no-repeat;
+                    background-size: 70%;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: .6rem;
+                    border-radius: 1rem;
+
+                }
+
+                div.skill-o-meter6{
+
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                    background-color: var(--color-whiteA2);
+                    background-image: linear-gradient(to right, var(--color-gradB1), var(--color-gradB2));
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: .6rem;
+                    border-radius: 1rem;
+
+                }
+
+/* Artículo 2 - Ruta profesional*/
+div.backRute {
+    background-image: linear-gradient(to right, var(--color-gradC1), var(--color-whiteA1));
+}
+article.profesionalRute {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;    	
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+
+    padding: 4rem;
+}
+
+    article.profesionalRute h2 {
+        background-color: hsla(0, 0%, 0%, .04);
+        display: inline-block;
+        padding: .7rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    div.countainerExperience{
+        line-height: 1rem;
+        text-align: right;
+        margin: 2.5rem .1rem;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;    	
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+
+        div.experience {
+            padding: 0 .5rem;
+        }
+
+
+
+            div.experience h3{
+                font-size: 1.5rem;
+                margin-top: 0rem;
+                margin-bottom: 0em;
+                color: var(--color-blackA1);
+                font-family: var(--font-body);
+                margin-bottom: .3rem;
+            }    
+            
+            div.experience p{
+                font-size: 1rem;
+                margin-top: 0rem;
+                color: var(--color-blackA2);
+        }
+
+    div.countainerEducation{
+
+        line-height: 1rem;
+        text-align: left;
+        margin: 0rem .1rem;
+        
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;    	
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+
+        div.education{
+            padding: 0 .5rem;
+        }
+
+            div.education h3{
+                font-size: 1.5rem;
+                margin-top: 0em;
+                margin-bottom: 0em;
+                color: var(--color-blackA1);
+                font-family: var(--font-body);
+                margin-bottom: .3rem;
+            }
+
+            div.education p{
+                font-size: 1rem;
+                margin-top: 0rem;
+                color: var(--color-blackA2);
+            }
+
+            div.blockDate{
+                display: inline-block;
+                font-family: var(--font-head);
+                font-size: .8rem;
+                color: var(--color-blackA3);
+                margin-bottom: .5rem;
+                padding: 0 .2em;
+                border-style: solid;
+                border-color: var(--color-blackA3);
+                border-width: .1rem;
+            }
+            
+            div.blockDateToday{
+                display: inline-block;
+                font-family: var(--font-head);
+                font-size: .8rem;
+                color: var(--color-compA3);
+                margin-bottom: .5rem;
+                padding: 0 .2em;
+                border-style: solid;
+                border-color: var(--color-compA3);
+                border-width: .1rem;
+                font-weight: 800;
+            }
+
+        div.timeline{
+            background-image: linear-gradient(to top, var(--color-blackA1), var(--color-compA3));
+            width: 1.5rem;
+            border-radius: 1rem;
+        }
+        
+        
+/* Footer */
+
+footer {
+    background-color: var(--color-blackA1);
+    display: flex;
+    flex-direction: column;    	
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    align-self: auto;
+    color: var(--color-whiteA1);
+    padding: 2rem;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5rem 0 0 0;
+        }
+
+
+    footer h1 {
+        font-size: 1.2rem;
+        color:var(--color-whiteA1);
+        margin: 0;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
