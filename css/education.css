@@ -167,12 +167,12 @@ article.educationProf{
             display: inline-block;
             font-family: var(--font-head);
             font-size: .8rem;
-            color: var(--color-blackA3);
+            color: var(--color-gradA1);
             margin-left: 5%;
             margin-bottom: .5rem;
             padding: 0 .2em;
             border-style: solid;
-            border-color: var(--color-blackA3);
+            border-color: var(--color-gradA1);
             border-width: .1rem;
         }
         

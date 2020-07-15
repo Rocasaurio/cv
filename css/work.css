@@ -117,14 +117,14 @@ nav a:hover {
 
 }
 
-/* Artículo 1 - Educación profesional*/
+/* Artículo 1 - Experiencia profesional*/
 article.workProf{
     width: 85%;
     padding: 1 auto 1 auto;
     margin: 1rem auto 1rem auto;
 
 }
-    /* Sección 1/2 - Tarjeta de contacto*/
+    /* Sección 1/2 - Tarjeta de titulo*/
     div.workCard {
         padding: 2.5rem;
         margin-bottom: 3rem;
@@ -167,12 +167,12 @@ article.workProf{
             display: inline-block;
             font-family: var(--font-head);
             font-size: .7rem;
-            color: var(--color-blackA3);
+            color: var(--color-gradA1);
             margin-left: 5%;
             margin-bottom: .5rem;
             padding: 0 .2em;
             border-style: solid;
-            border-color: var(--color-blackA3);
+            border-color: var(--color-gradA1);
             border-width: .1rem;
         }
         
