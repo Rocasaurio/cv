@@ -118,14 +118,14 @@ nav a:hover {
 }
 
 /* Artículo 1 - Educación profesional*/
-article.educationProf{
+article.workProf{
     width: 85%;
     padding: 1 auto 1 auto;
     margin: 1rem auto 1rem auto;
 
 }
     /* Sección 1/2 - Tarjeta de contacto*/
-    div.educationCard {
+    div.workCard {
         padding: 2.5rem;
         margin-bottom: 3rem;
         background-color: var(--color-whiteA1);
@@ -135,7 +135,7 @@ article.educationProf{
         -webkit-box-shadow: 0px 10px 103 2px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 10px 103px 2px rgba(0,0,0,0.2);
     }
-        div.educationCard h1{
+        div.workCard h1{
             font-size: 2rem;
             text-align: center;
             font-weight: 700;
@@ -143,10 +143,10 @@ article.educationProf{
 
 
 
-    div.educationContainer {
+    div.workContainer {
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: row;    	
         flex-wrap: nowrap;
@@ -157,7 +157,7 @@ article.educationProf{
         padding: 1rem;
     }
 
-    div.educationContainer a p{
+    div.workContainer a p{
             font-weight: 500;
             color: var(--color-compA1);
             text-decoration: underline;
@@ -166,7 +166,7 @@ article.educationProf{
         div.blockDate{
             display: inline-block;
             font-family: var(--font-head);
-            font-size: .8rem;
+            font-size: .7rem;
             color: var(--color-blackA3);
             margin-left: 5%;
             margin-bottom: .5rem;
@@ -177,7 +177,7 @@ article.educationProf{
         }
         
 
-    div.educationRoute {
+    div.workRoute {
         width: 45%;
         display: flex;
         flex-direction: column;    	
@@ -188,34 +188,26 @@ article.educationProf{
         color: var(--color-whiteA1);
     }
 
-    div.educationRoute h2{
+    div.workRoute h2{
         margin: 0 auto 0 auto;
         text-align: center;
         margin-bottom: 2rem;
     }
 
-        div.educationRoute h3{
+        div.workRoute h3{
             margin: 0 auto 0 auto;
             width: 90%;
             font-family: var(--font-body);
         }
 
-        div.educationRoute p{
-            margin: 0 auto .5rem auto;
+        div.workRoute p{
+            margin: 0 auto .2rem auto;
             width: 90%;
     }
 
-        p.categoryInfo{
-            font-weight: 700;
-            font-variant: small-caps;
-        }
-
-        p.subInstitution{
-        font-size: .9rem;
-        }
 
 
-            div.educationItem{
+            div.workItem{
                 width: 100%;
                 display: flex;
                 flex-direction: row;    	
@@ -226,80 +218,24 @@ article.educationProf{
 
                 border-radius: 1rem;
                 box-shadow: 0px 10px 103px 1px rgba(0,0,0,0.2);
+
+                margin-bottom: 1.5rem;
             }
 
                 div.eItemInfo{
                     width: 100%;
                 }
 
-                div.educationItem img{
+                div.eItemInfo p{
+                    font-size: .9rem;
+                }
+
+                div.workItem img{
                     width: 40%;
                     border-radius: 1rem 0 0 1rem;
                 }
 
 
-    div.extraItem{
-        margin-bottom: 2rem;
-        width: 100%;
-
-        border-radius: 1rem;
-
-        box-shadow: 0px 10px 103px 1px rgba(0,0,0,0.2);
-
-    }
-
-
-
-
-    div.educationExtra{
-        width: 45%;
-        display: flex;
-        flex-direction: column;    	
-        flex-wrap: nowrap;
-        justify-content: start;
-        align-items: flex-start;
-        align-content: stretch;
-        color: var(--color-whiteA1);
-    }
-
-    div.educationExtra h2{
-        margin: 0 auto 0 auto;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    div.educationExtra img{
-        object-fit: cover;
-        object-position: 100% 20%;
-      
-        width: 100%;
-        height: 8rem;
-        border-radius: 1rem 1rem 0 0 ;
-
-        margin-bottom: .5rem;
-    }
-
-        div.rItem3 img{
-            object-position: 100% 20%;
-        }
-
-        div.rItem2 img{
-            object-position: 100% 25%;
-        }
-
-        div.rItem1 img{
-            object-position: 100% 13%;
-        }
-
-    div.educationExtra h3{
-        margin: 0 auto 0 auto;
-        width: 90%;
-        font-family: var(--font-body);
-    }
-    div.educationExtra p{
-        margin: 0 auto .5rem auto;
-        width: 90%;
-    }
 
 
 /* Footer */
